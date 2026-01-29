@@ -1,0 +1,21 @@
+:root{
+  --bg: #FFE6A7;
+  --surface: #FFF6D6;      /* light card surface */
+  --text: #432818;
+  --muted: rgba(67, 40, 24, .72);
+
+  --primary: #742727;      /* main action */
+  --secondary: #99582A;    /* secondary action / header */
+  --accent: #BB9457;       /* highlight */
+  --border: rgba(67, 40, 24, .18);
+
+  --radius: 14px;
+  --shadow: 0 14px 30px rgba(67, 40, 24, .14);
+}
+
+/* Page base */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}

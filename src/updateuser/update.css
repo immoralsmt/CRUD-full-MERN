@@ -1,0 +1,118 @@
+.updateuser{
+  max-width: 560px;
+  margin: 38px auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  box-shadow: var(--shadow);
+}
+
+.updateuser h3{
+  text-align:center;
+  margin: 14px 0 20px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.updateuser > a.btn{
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+/* Form */
+.updateuserform{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.updateinput{
+  display:flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.updateinput label{
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.updateinput input{
+  height: 44px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(67, 40, 24, .22);
+  background: #fff;
+  color: var(--text);
+  outline: none;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+.updateinput input:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(187, 148, 87, .25);
+}
+
+/* Update button = secondary color to differentiate from Add */
+.updateuserform .btn-primary{
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  border-radius: 14px;
+  height: 46px;
+  font-weight: 900;
+  letter-spacing: .3px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.updateuserform .btn-primary:hover{
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(153, 88, 42, .22);
+}
+/* ============================= */
+/* Text & Typography Refinement */
+/* ============================= */
+
+/* Better text inside inputs */
+.updateinput input {
+  font-size: 15px;              /* slightly bigger */
+  font-weight: 500;             /* medium weight */
+  line-height: 1.45;
+  letter-spacing: 0.25px;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Placeholder style (clean & subtle) */
+.updateinput input::placeholder {
+  color: rgba(67, 40, 24, 0.45);
+  font-weight: 400;
+}
+
+/* When user types text */
+.updateinput input:not(:placeholder-shown) {
+  color: var(--text);           /* #432818 */
+  font-weight: 600;             /* makes typed text pop */
+}
+
+/* Smooth hover feel */
+.updateinput input:hover {
+  border-color: rgba(187, 148, 87, 0.55);
+}
+
+/* Better label spacing */
+.updateinput label {
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+}
+
+/* Improve long text readability (like address) */
+.updateinput input[type="text"] {
+  word-spacing: 1px;
+}
+.inputgroup input,
+.updateinput input {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
